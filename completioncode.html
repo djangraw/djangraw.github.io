@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Completion Code</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<center>
+<h2>Your Completion Code Is: </h2>
+<h1> <span id="code" ></span> </h1>
+<p> Thank you for participating! </p>
+</center>
+
+<script language="JavaScript">
+
+	function addComment()
+	{
+		var parameters = location.search.substring(1).split("&");
+
+		var temp = parameters[0].split("=");
+		c = unescape(temp[1]);
+
+		document.getElementById("code").innerHTML = c;
+	}
+addComment();
+
+</script>
+</body>
+</html>
